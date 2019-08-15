@@ -1,0 +1,77 @@
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+    border:1px solid black;
+}
+
+
+
+#petugas-dinas-dashboard .card{
+    margin-top: 30px;
+    min-width: 350px;
+}
+
+#petugas-dinas-dashboard i{
+    margin-top: 20px;
+}
+
+#detail-gapoktan .card-body{
+    padding: 10px, 10px, 10px, 10px;
+}
+
+#detail-gapoktan body{
+    background-color: aqua;
+}
+
+body{
+    background-color: #fff;
+}
+
+
+.navbar{
+    display: block;
+    color: white;
+  }
+  
+  .img-brand {
+    float: left;
+    height: 70px;
+  }
+  
+  @page {
+    size: A4;
+    margin: 0;
+    margin-left: 10px;
+    margin-top:15px;
+  }
+  @media print {
+    html, body {
+
+    }
+    h5{
+        margin-right: 100px;
+    }
+
+
+    .yesPrint {display:block;}
+    .noPrint {visibility: hidden;}
+    /* ... the rest of the rules ... */
+
+    .container{
+        margin-left: 30px;
+
+    }
+  }
+
+  table{
+      counter-reset: tableCount;
+  }
+  .counterCell::before{
+      content: counter(tableCount);
+      counter-increment: tableCount;
+  }
+
